@@ -388,22 +388,22 @@ export default function Home() {
               </h3>
               <div className="text-left space-y-2 bg-white p-4 rounded-lg shadow-sm border">
                 <p className="text-sm">
-                  <span className="font-medium">Compañía:</span> {serverResponse.data.company}
+                  <span className="font-medium">Compañía:</span> {serverResponse.data.companyName}
                 </p>
                 <p className="text-sm">
                   <span className="font-medium">Categoría:</span> {serverResponse.data.category}
                 </p>
                 <p className="text-sm">
-                  <span className="font-medium">Monto:</span> ${serverResponse.data.totalAmount}
+                  <span className="font-medium">Monto:</span> ${serverResponse.data.valor_factura}
                 </p>
-                {serverResponse.data.date && (
+                {serverResponse.data.fecha_vencimiento && (
                   <p className="text-sm">
-                    <span className="font-medium">Fecha:</span> {serverResponse.data.date}
+                    <span className="font-medium">Fecha:</span> {serverResponse.data.fecha_vencimiento}
                   </p>
                 )}
-                {serverResponse.data.clientName && (
+                {serverResponse.data.nombre_cliente && (
                   <p className="text-sm">
-                    <span className="font-medium">Cliente:</span> {serverResponse.data.clientName}
+                    <span className="font-medium">Cliente:</span> {serverResponse.data.nombre_cliente}
                   </p>
                 )}
                 <div className="mt-4">
